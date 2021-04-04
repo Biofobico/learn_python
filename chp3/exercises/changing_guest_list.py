@@ -1,14 +1,25 @@
-guest_list = ['bob marley', 'david bowie', 'freddy mercury', 'mozart']
-print(f"Hello {guest_list[0].title()}, would you like to have dinner with me?")
-print(f"Hi {guest_list[1].title()}, would you like to have dinner with me?")
-print(f"Hello {guest_list[2].title()}, fancy a dinner with me?")
-print(f"Hello {guest_list[-1].title()}, would you like to have a dinner with me?")
+guests = ['bob marley', 'david bowie', 'freddy mercury']
 
-print(f"\nUnfortunately {guest_list[0].title()} can't join us for dinner.")
+name = guests[0].title()
+print(f"{name} please come dinner.")
 
-guest_list[0] = 'beethoven'
+name = guests[1].title()
+print(f"{name} please come dinner.")
 
-print(f"\nHello {guest_list[0].title()}, would you like to have a dinner with us?")
-print(f"Good afternoon {guest_list[1].title()}, would you like to have a dinner with us?")
-print(f"Hi {guest_list[2].title()}, would you like to have a dinner with us?")
-print(f"Howdy {guest_list[-1].title()}, would you like to have a dinner with us?")
+name = guests[2].title()
+print(f"{name} please come dinner.")
+
+print(f"\n{guests[2].title()} can't come to dinner.")
+
+del guests[-1]
+guests.append('bach')
+
+name = guests[0].title()
+print(f"\n{name} please come dinner.")
+
+name = guests[1].title()
+print(f"{name} please come dinner.")
+
+name = guests[2].title()
+print(f"{name} please come dinner.")
+
